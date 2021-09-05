@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+
+body {
+  font-family: "Karla", sans-serif;
+}
+.main-nav ul,
+.main-content,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-search {
+  width: 25px;
+  text-align: left;
+  color: #70757a;
+}
+
+.fa-microphone {
+  width: 25px;
+  text-align: right;
+  margin-bottom: -30px;
+  margin-left: -50px;
+}
+
+.leftNav,
+.rightNav {
+  display: flex;
+  flex-direction: row;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 0 1em;
+}
+
+img {
+  width: 20%;
+  height: auto;
+  margin-top: 3.5em;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #70757a;
+}
+
+.main-content {
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.left-align {
+  margin-right: 0;
+}
+
+.left-align a,
+.right-align a {
+  padding: 1em;
+}
+
+/* .right-align {
+  margin-right: 0;
+} */
+.searchBoxLayout {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11em;
+}
+
+.searchBtns {
+  margin-top: 2em;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 510px;
+  height: auto;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  outline: none;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+input[type="text"]:hover {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+input[type="button"] {
+  padding: 0.8em;
+  margin: 0.6em;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+input[type="button"]:hover {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.signInBtn {
+  background-color: blue;
+  color: #fff;
+  padding: 0.5em;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 0.7em;
+  margin: 0;
+  color: #70757a;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 660px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    width: 300px;
+  }
+}
